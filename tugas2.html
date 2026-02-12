@@ -11,12 +11,12 @@
             background-image: url("assets/Itunya.jpg");
             background-size: cover;
             background-position: center;
-            min-height: 100vh;
+            min-height: 550px;
         }
 
         .overlay{
             background-color: rgba(0, 0, 0, 0.7);
-            min-height: 100vh;
+            min-height: 550px;
         }
 
         .card-img-top {
@@ -24,11 +24,23 @@
             height: 200px;
             object-fit: cover; 
         }
-    </style>
+</style>
 <body>
+
+    <div class="hero">
+        <div class="overlay d-flex justify-content-center align-items-center text-center">
+            <div class="text-white">
+                <h1 class="display-5 fw-bold">Selamat Datang di Sistem Manajemen Siswa</h1>
+                <p class="fs-4">Kelola data kehadiran, profil, dan status akademik dengan lebih mudah dan efisien.</p>
+                <button class="btn btn-primary btn-lg">Lihat Tabel</button>
+                <button class="btn btn-outline-light btn-lg">Panduan</button>
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-4">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+            <ol class="breadcrumb border p-3">
                 <li class="breadcrumb-item">
                     <a href="#">Home</a>
                 </li>
@@ -46,17 +58,6 @@
                 </li>
             </ol>
         </nav>
-    </div>
-
-    <div class="hero">
-        <div class="overlay d-flex justify-content-center align-items-center text-center">
-            <div class="text-white">
-                <h1 class="display-5 fw-bold">Selamat Datang di Sistem Manajemen Siswa</h1>
-                <p class="fs-4">Kelola data kehadiran, profil, dan status akademik dengan lebih mudah dan efisien.</p>
-                <button class="btn btn-primary btn-lg">Lihat Tabel</button>
-                <button class="btn btn-outline-light btn-lg">Panduan</button>
-            </div>
-        </div>
     </div>
 
 <div class="container py-5">
@@ -110,52 +111,50 @@
 
 <div class="container py-5">
   <h2 class="text-center fw-bold mb-4">Jurusan</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-10"> 
-      <div class="card-group">
-        <div class="card">
-          <img src="assets/rpl.jpg" alt="Ilustratif rpl" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title text-primary">PPLG</h5>
-                <p class="card-text">Pengembangan Perangkat Lunak & Gim.
-                    Fokus pada coding, web, dan mobile apps.
-                </p>
-            <p><b>Siswa</b>: 120 <br> <b>Lab</b>: 4 Ruangan</p>
-          </div>
+  <div class="row g-4 justify-content-center mb-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/rpl.jpg" class="card-img-top" alt="PPLG" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">PPLG</h5>
+                    <p class="card-text text-muted small">Pengembangan Perangkat Lunak & Gim. Fokus pada coding, web, dan mobile apps.</p>
+                    <p class="card-text mb-0"><strong>Siswa:</strong> 120</p>
+                    <p class="card-text"><strong>Lab:</strong> 4 Ruangan</p>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-          <img src="assets/tkj.jpg" alt="Ilustratif tjkt" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title text-primary">TJKT</h5>
-                <p class="card-text">Teknik Jaringan Komputer & Telekomunikasi. 
-                    Ahli dalam infrastruktur server dan jaringan.
-                </p>
-            <p><b>Siswa</b>: 115 <br> <b>Lab</b>: 3 Ruangan</p>
-          </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/tkj.jpg" class="card-img-top" alt="TJKT" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">TJKT</h5>
+                    <p class="card-text text-muted small">Teknik Jaringan Komputer & Telekomunikasi. Ahli dalam infrastruktur server dan jaringan.</p>
+                    <p class="card-text mb-0"><strong>Siswa:</strong> 115</p>
+                    <p class="card-text"><strong>Lab:</strong> 3 Ruangan</p>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-          <img src="assets/kuliner.jpg" alt="Ilustratif kuliner" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Kuliner</h5>
-                <p class="card-text">Seni Kuliner & Tata Boga. Menciptakan tenaga profesional di bidang 
-                    hospitality dan restoran.
-                </p>
-            <p><b>Siswa</b>: 115 <br> <b>Dapur</b>: 3 Standar Industri</p>
-          </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/kuliner.jpg" class="card-img-top" alt="Kuliner" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">KULINER</h5>
+                    <p class="card-text text-muted small">Seni Kuliner & Tata Boga. Menciptakan tenaga profesional di bidang hospitality dan restoran.</p>
+                    <p class="card-text mb-0"><strong>Siswa:</strong> 115</p>
+                    <p class="card-text"><strong>Dapur:</strong> 3 Standar Industri</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
 
-<div class="row g-4 justify-content-center">
+    <div class="row g-4 justify-content-center">
         <div class="col-md-4">
             <div class="card h-100 shadow-sm">
                 <img src="assets/busana.jpg" class="card-img-top" alt="Busana" style="height: 200px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title text-primary fw-bold">Busana</h5>
+                    <h5 class="card-title text-primary fw-bold">BUSANA</h5>
                     <p class="card-text text-muted small">Desain dan Produksi Busana. Fokus pada kreativitas fashion dan teknik menjahit modern.</p>
                     <p class="card-text mb-0"><strong>Siswa:</strong> 90</p>
                     <p class="card-text"><strong>Studio:</strong> 2 Workshop</p>
@@ -167,7 +166,7 @@
             <div class="card h-100 shadow-sm">
                 <img src="assets/otomotif.jpg" class="card-img-top" alt="Otomotif" style="height: 200px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title text-primary fw-bold">Otomotif</h5>
+                    <h5 class="card-title text-primary fw-bold">OTOMOTIF</h5>
                     <p class="card-text text-muted small">Teknik Kendaraan Ringan. Mempelajari mesin, kelistrikan mobil, dan manajemen bengkel.</p>
                     <p class="card-text mb-0"><strong>Siswa:</strong> 130</p>
                     <p class="card-text"><strong>Bengkel:</strong> 1 Unit Produksi</p>
@@ -253,4 +252,7 @@
         <button class="btn btn-outline-primary">Exkspor Ke Excel</button>
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
